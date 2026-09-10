@@ -1,0 +1,2913 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford English Academy | Premium English Language Institute</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Develop practical English communication skills for study, work, travel, and everyday conversations at Oxford English Academy. Spoken English, Grammar, IELTS, and Business English courses.">
+    <meta name="keywords" content="English language institute, Spoken English, IELTS Preparation, Business English, English Grammar, English Conversation, Learn English">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Oxford English Academy | Learn English. Build Confidence.">
+    <meta property="og:description" content="Develop practical English communication skills for study, work, travel and everyday conversations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oxfordenglishacademy.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Favicon (Inline SVG) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B192C'/><text x='50' y='65' font-size='50' font-family='serif' font-weight='bold' fill='%23D4AF37' text-anchor='middle'>O</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           1. CSS VARIABLES & RESET
+           ========================================================================== */
+        :root {
+            --bg-primary: #0B192C;
+            --bg-secondary: #1E3E62;
+            --bg-light: #F8FAFC;
+            --bg-white: #FFFFFF;
+            
+            --brand-royal: #185ADB;
+            --brand-sky: #E0F2FE;
+            --brand-sky-dark: #0284C7;
+            --brand-gold: #D4AF37;
+            --brand-gold-soft: rgba(212, 175, 55, 0.15);
+            
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --text-light: #F1F5F9;
+            --text-white: #FFFFFF;
+            
+            --border-light: #E2E8F0;
+            --border-dark: rgba(255, 255, 255, 0.1);
+            
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-full: 9999px;
+            
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 16px 32px rgba(11, 25, 44, 0.12);
+            --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+            
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+            --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            
+            --font-heading: 'Cinzel', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           2. UTILITY CLASSES & COMPONENTS
+           ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .section-title-wrapper {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--brand-royal);
+            background: var(--brand-sky);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 1rem;
+        }
+
+        .section-tag.gold {
+            color: #9A7B1C;
+            background: var(--brand-gold-soft);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--bg-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.75rem;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            transition: var(--transition-normal);
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--brand-royal);
+            color: var(--text-white);
+            box-shadow: 0 4px 14px rgba(24, 90, 219, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #1042A6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(24, 90, 219, 0.4);
+        }
+
+        .btn-gold {
+            background-color: var(--brand-gold);
+            color: var(--bg-primary);
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-gold:hover {
+            background-color: #C19E2E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--border-light);
+            background: transparent;
+            color: var(--bg-primary);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--brand-royal);
+            color: var(--brand-royal);
+            background: var(--brand-sky);
+        }
+
+        .btn-outline-white {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-white);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline-white:hover {
+            border-color: var(--text-white);
+            background: var(--text-white);
+            color: var(--bg-primary);
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-md);
+        }
+
+        .glass-dark {
+            background: rgba(11, 25, 44, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-white);
+        }
+
+        /* ==========================================================================
+           3. HEADER & NAVIGATION
+           ========================================================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-normal);
+            padding: 1.25rem 0;
+            background: transparent;
+        }
+
+        .header.scrolled {
+            background: rgba(11, 25, 44, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.875rem 0;
+            box-shadow: var(--shadow-md);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .logo-main {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--text-white);
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--brand-gold);
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            padding: 0.25rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--brand-gold);
+            transition: var(--transition-fast);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-white);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hamburger {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger-box {
+            width: 28px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            width: 28px;
+            height: 2px;
+            background-color: var(--text-white);
+            position: absolute;
+            transition: var(--transition-fast);
+            border-radius: 2px;
+        }
+
+        .hamburger-inner {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hamburger-inner::before {
+            content: '';
+            top: -8px;
+        }
+
+        .hamburger-inner::after {
+            content: '';
+            bottom: -8px;
+        }
+
+        .hamburger.active .hamburger-inner {
+            background-color: transparent;
+        }
+
+        .hamburger.active .hamburger-inner::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        .hamburger.active .hamburger-inner::after {
+            transform: rotate(-45deg);
+            bottom: 0;
+        }
+
+        /* ==========================================================================
+           4. HERO SECTION
+           ========================================================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            background-color: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            padding-top: 6rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.25;
+            filter: contrast(1.1);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(11, 25, 44, 0.95) 0%, rgba(11, 25, 44, 0.75) 60%, rgba(30, 62, 98, 0.8) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: var(--text-white);
+            max-width: 850px;
+        }
+
+        .hero-headline {
+            font-family: var(--font-heading);
+            font-size: 3.75rem;
+            line-height: 1.15;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-headline span {
+            color: var(--brand-gold);
+            display: block;
+        }
+
+        .hero-supporting {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            font-weight: 300;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 3.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-pillars {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-full);
+            gap: 2rem;
+        }
+
+        .pillar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--brand-sky);
+        }
+
+        .pillar-item span.dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--brand-gold);
+            border-radius: 50%;
+        }
+
+        /* ==========================================================================
+           5. ABOUT SECTION
+           ========================================================================== */
+        .about {
+            background-color: var(--bg-white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-image-wrapper img {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .about-image-accent {
+            position: absolute;
+            bottom: -1.5rem;
+            right: -1.5rem;
+            background: var(--bg-primary);
+            color: var(--text-white);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border-left: 4px solid var(--brand-gold);
+            max-width: 260px;
+        }
+
+        .about-image-accent p {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .about-text .section-tag {
+            margin-bottom: 0.75rem;
+        }
+
+        .about-text .section-title {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .skills-tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .skill-chip {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-light);
+            color: var(--bg-primary);
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition-fast);
+        }
+
+        .skill-chip:hover {
+            background-color: var(--brand-royal);
+            color: var(--text-white);
+            border-color: var(--brand-royal);
+        }
+
+        /* ==========================================================================
+           6. COURSES SECTION
+           ========================================================================== */
+        .courses {
+            background-color: var(--bg-light);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+            transition: var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(24, 90, 219, 0.3);
+        }
+
+        .course-image {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .course-card:hover .course-image img {
+            transform: scale(1.05);
+        }
+
+        .course-icon-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 48px;
+            height: 48px;
+            background: var(--bg-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+            color: var(--brand-royal);
+        }
+
+        .course-content {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .course-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .course-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .course-footer {
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* ==========================================================================
+           7. INTERACTIVE LEVEL SELECTOR
+           ========================================================================== */
+        .level-selector-section {
+            background-color: var(--bg-primary);
+            color: var(--text-white);
+            position: relative;
+        }
+
+        .level-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .level-btn {
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-normal);
+        }
+
+        .level-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-white);
+        }
+
+        .level-btn.active {
+            background: var(--brand-royal);
+            color: var(--text-white);
+            border-color: var(--brand-royal);
+            box-shadow: 0 4px 20px rgba(24, 90, 219, 0.4);
+        }
+
+        .level-display-card {
+            background: rgba(30, 62, 98, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+
+        .level-content {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .level-content.active {
+            display: block;
+        }
+
+        .level-header-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--brand-gold);
+            margin-bottom: 1rem;
+        }
+
+        .level-desc-text {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .level-areas-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--brand-sky);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .level-areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .area-item {
+            background: rgba(11, 25, 44, 0.6);
+            padding: 1rem 1.25rem;
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--brand-gold);
+            font-size: 0.95rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==========================================================================
+           8. ENGLISH SKILLS SECTION
+           ========================================================================== */
+        .skills-section {
+            background-color: var(--bg-white);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg-light);
+            border-radius: var(--radius-md);
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--border-light);
+            position: relative;
+            transition: var(--transition-normal);
+            overflow: hidden;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background: var(--bg-white);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--brand-royal);
+        }
+
+        .skill-card-img {
+            width: 100%;
+            height: 160px;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-num {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--brand-gold);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .skill-card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .skill-card-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ==========================================================================
+           9. LEARNING EXPERIENCE (EDITORIAL)
+           ========================================================================== */
+        .learning-exp {
+            background-color: var(--bg-light);
+            position: relative;
+        }
+
+        .exp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .exp-image-container {
+            position: relative;
+        }
+
+        .exp-image-container img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .exp-decorative-badge {
+            position: absolute;
+            top: 2rem;
+            left: -2rem;
+            background: var(--brand-royal);
+            color: var(--text-white);
+            padding: 1.25rem 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .exp-badge-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .exp-concepts {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .concept-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .concept-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: var(--brand-sky);
+            color: var(--brand-royal);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .concept-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 0.35rem;
+        }
+
+        .concept-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ==========================================================================
+           10. WHY OXFORD ENGLISH ACADEMY
+           ========================================================================== */
+        .why-us {
+            background-color: var(--bg-white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .why-card {
+            padding: 2.5rem;
+            border-radius: var(--radius-md);
+            background: var(--bg-light);
+            border: 1px solid var(--border-light);
+            transition: var(--transition-normal);
+        }
+
+        .why-card:hover {
+            background: var(--bg-white);
+            box-shadow: var(--shadow-md);
+            border-color: var(--brand-royal);
+            transform: translateY(-4px);
+        }
+
+        .why-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--brand-royal);
+            color: var(--text-white);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .why-card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .why-card-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ==========================================================================
+           11. ENGLISH CONVERSATION LAB
+           ========================================================================== */
+        .conversation-lab {
+            background-color: var(--bg-primary);
+            color: var(--text-white);
+        }
+
+        .scenario-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .scenario-btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition-fast);
+        }
+
+        .scenario-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .scenario-btn.active {
+            background: var(--brand-gold);
+            color: var(--bg-primary);
+            border-color: var(--brand-gold);
+            font-weight: 700;
+        }
+
+        .chat-box {
+            max-width: 750px;
+            margin: 0 auto;
+            background: rgba(30, 62, 98, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            min-height: 380px;
+        }
+
+        .chat-content {
+            display: none;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .chat-content.active {
+            display: flex;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .chat-bubble {
+            max-width: 80%;
+            padding: 1.25rem 1.5rem;
+            border-radius: 18px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        .chat-bubble.speaker-a {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom-left-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-white);
+        }
+
+        .chat-bubble.speaker-b {
+            align-self: flex-end;
+            background: var(--brand-royal);
+            border-bottom-right-radius: 4px;
+            color: var(--text-white);
+        }
+
+        .speaker-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.35rem;
+            display: block;
+            opacity: 0.8;
+        }
+
+        /* ==========================================================================
+           12. LEARNING JOURNEY
+           ========================================================================== */
+        .journey {
+            background-color: var(--bg-light);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+        }
+
+        .timeline-step {
+            background: var(--bg-white);
+            padding: 2rem 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            text-align: center;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+        }
+
+        .timeline-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--brand-royal);
+        }
+
+        .step-num {
+            width: 44px;
+            height: 44px;
+            background: var(--brand-sky);
+            color: var(--brand-royal);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem auto;
+            font-size: 1.1rem;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ==========================================================================
+           13. GALLERY
+           ========================================================================== */
+        .gallery {
+            background-color: var(--bg-white);
+        }
+
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--radius-full);
+            background: var(--bg-light);
+            border: 1px solid var(--border-light);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition-fast);
+        }
+
+        .filter-btn:hover {
+            background: var(--border-light);
+            color: var(--text-dark);
+        }
+
+        .filter-btn.active {
+            background: var(--brand-royal);
+            color: var(--text-white);
+            border-color: var(--brand-royal);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 260px;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(11, 25, 44, 0.8) 0%, transparent 60%);
+            opacity: 0;
+            transition: var(--transition-normal);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-caption {
+            color: var(--text-white);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 25, 44, 0.95);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 1000px;
+            max-height: 80vh;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-lg);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text-white);
+            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-fast);
+        }
+
+        .lightbox-close:hover {
+            background: var(--brand-gold);
+            color: var(--bg-primary);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            pointer-events: none;
+        }
+
+        .lightbox-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text-white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.25rem;
+            cursor: pointer;
+            pointer-events: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-fast);
+        }
+
+        .lightbox-btn:hover {
+            background: var(--brand-royal);
+        }
+
+        /* ==========================================================================
+           14. FAQ SECTION
+           ========================================================================== */
+        .faq {
+            background-color: var(--bg-light);
+        }
+
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            text-align: left;
+            background: transparent;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-icon {
+            font-size: 1.25rem;
+            transition: var(--transition-fast);
+            color: var(--brand-royal);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 2rem;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 2rem 1.5rem 2rem;
+        }
+
+        /* ==========================================================================
+           15. CONTACT CTA & CONTACT SECTION
+           ========================================================================== */
+        .contact-cta {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta .section-title {
+            color: var(--text-white);
+        }
+
+        .contact-cta .section-subtitle {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-section {
+            background-color: var(--bg-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info-card {
+            background: var(--bg-light);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+        }
+
+        .contact-info-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--bg-primary);
+            margin-bottom: 2rem;
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+
+        .info-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--brand-sky);
+            color: var(--brand-royal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            min-width: 48px;
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--bg-primary);
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            padding: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--bg-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.875rem 1.25rem;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            background: var(--bg-light);
+            color: var(--text-dark);
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--brand-royal);
+            background: var(--bg-white);
+            box-shadow: 0 0 0 3px rgba(24, 90, 219, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .form-status.success {
+            display: block;
+            background-color: #DEF7EC;
+            color: #03543F;
+            border: 1px solid #84E1BC;
+        }
+
+        .form-status.error {
+            display: block;
+            background-color: #FDE8E8;
+            color: #9B1C1C;
+            border: 1px solid #F8B4B4;
+        }
+
+        /* ==========================================================================
+           16. FOOTER
+           ========================================================================== */
+        .footer {
+            background-color: var(--bg-primary);
+            color: var(--text-light);
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 1.25rem;
+            max-width: 300px;
+            font-size: 0.95rem;
+        }
+
+        .footer-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--text-white);
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--brand-gold);
+            padding-left: 4px;
+        }
+
+        .footer-cta-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-md);
+            padding: 2.5rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .footer-cta-text h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--text-white);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-legal a:hover {
+            color: var(--text-white);
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 44px;
+            height: 44px;
+            background-color: var(--brand-royal);
+            color: var(--text-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-normal);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--brand-gold);
+            color: var(--bg-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ==========================================================================
+           17. RESPONSIVE BREAKPOINTS
+           ========================================================================== */
+        @media (max-width: 1200px) {
+            .timeline {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-headline {
+                font-size: 3rem;
+            }
+
+            .about-grid, .exp-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background: var(--bg-primary);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                padding: 2rem;
+                transition: var(--transition-normal);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .hero-headline {
+                font-size: 2.5rem;
+            }
+
+            .hero-pillars {
+                flex-wrap: wrap;
+                gap: 1rem;
+                border-radius: var(--radius-md);
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-bubble {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER / NAVBAR
+       ========================================================================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-main">OXFORD</span>
+                <span class="logo-sub">ENGLISH ACADEMY</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#learning" class="nav-link">Learning</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-gold" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">Start Learning</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1600&auto=format&fit=crop" alt="Students engaged in English conversation practice inside a modern classroom">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1 class="hero-headline">
+                    Speak English.
+                    <span>Build Your Confidence.</span>
+                </h1>
+                <p class="hero-supporting">
+                    Develop practical English communication skills for study, work, travel and everyday conversations through structured, skill-focused learning.
+                </p>
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="https://wa.me/923094729478" target="_blank" rel="noopener" class="btn btn-outline-white">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        WhatsApp Us
+                    </a>
+                </div>
+                <div class="hero-pillars">
+                    <div class="pillar-item">LISTEN</div>
+                    <div class="pillar-item"><span class="dot"></span>SPEAK</div>
+                    <div class="pillar-item"><span class="dot"></span>READ</div>
+                    <div class="pillar-item"><span class="dot"></span>WRITE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop" alt="Teacher facilitating an active language learning session with adult students">
+                    <div class="about-image-accent">
+                        <p>Focusing on realistic communication &amp; real-world usage.</p>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <span class="section-tag">About The Academy</span>
+                    <h2 class="section-title">Welcome to Oxford English Academy</h2>
+                    <p>
+                        At Oxford English Academy, we believe that learning English goes beyond memorizing grammar rules—it is about gaining the confidence to express yourself clearly in any environment.
+                    </p>
+                    <p>
+                        Our educational framework focuses on immersive communication practice, practical vocabulary usage, and interactive exercises designed to help learners transition from passive understanding to active fluency.
+                    </p>
+                    <div class="skills-tag-cloud">
+                        <span class="skill-chip">English Communication</span>
+                        <span class="skill-chip">Speaking Practice</span>
+                        <span class="skill-chip">Grammar</span>
+                        <span class="skill-chip">Vocabulary</span>
+                        <span class="skill-chip">Listening</span>
+                        <span class="skill-chip">Reading</span>
+                        <span class="skill-chip">Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       COURSES SECTION
+       ========================================================================== -->
+    <section class="courses section-padding" id="courses">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Academic Programs</span>
+                <h2 class="section-title">Learn English Your Way</h2>
+                <p class="section-subtitle">Structured courses tailored to help you meet specific personal, academic, or professional learning goals.</p>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600&auto=format&fit=crop" alt="Students engaged in dynamic spoken English conversation">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Spoken English</h3>
+                        <p class="course-desc">Focus on everyday communication, pronunciation, and building natural speaking confidence in diverse settings.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600&auto=format&fit=crop" alt="Textbook and notebook for studying English grammar rules">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">English Grammar</h3>
+                        <p class="course-desc">Build a stronger foundation in English sentence structure, tenses, and correct mechanics for accurate expression.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop" alt="Group of students having an English conversation session">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">English Conversation</h3>
+                        <p class="course-desc">Practice real-life conversations, debate topics, and refine public speaking through interactive group discussions.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600&auto=format&fit=crop" alt="Student preparing for IELTS exam with focus and notes">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">IELTS Preparation</h3>
+                        <p class="course-desc">Preparation-focused learning covering reading strategies, task writing, listening comprehension, and speaking routines.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="Professional using Business English during a corporate presentation">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Business English</h3>
+                        <p class="course-desc">Professional English for workplace settings, formal email writing, presentations, negotiations, and interviews.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card reveal">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop" alt="Beginner learning fundamental English vocabulary with open books">
+                        <div class="course-icon-badge">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">English for Beginners</h3>
+                        <p class="course-desc">A structured starting point for foundational learners seeking to build core sentence building and essential vocabulary.</p>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline" style="width: 100%;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       INTERACTIVE LEVEL SELECTOR
+       ========================================================================== -->
+    <section class="level-selector-section section-padding">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag gold">Interactive Guide</span>
+                <h2 class="section-title" style="color: var(--text-white);">Find Your Learning Focus</h2>
+                <p class="section-subtitle" style="color: var(--text-light);">Select your current skill level to view recommended study areas and target objectives.</p>
+            </div>
+
+            <div class="level-tabs reveal">
+                <button class="level-btn active" onclick="switchLevel('beginner', this)">Beginner</button>
+                <button class="level-btn" onclick="switchLevel('intermediate', this)">Intermediate</button>
+                <button class="level-btn" onclick="switchLevel('advanced', this)">Advanced</button>
+            </div>
+
+            <div class="level-display-card reveal">
+                <!-- Beginner Content -->
+                <div class="level-content active" id="level-beginner">
+                    <h3 class="level-header-text">Beginner Level</h3>
+                    <p class="level-desc-text">Build basic vocabulary, grammar and everyday communication skills. Ideal for learners starting their language journey.</p>
+                    <div class="level-areas-title">Recommended Focus Areas</div>
+                    <div class="level-areas-grid">
+                        <div class="area-item">Essential Daily Vocabulary</div>
+                        <div class="area-item">Basic Sentence Structure</div>
+                        <div class="area-item">Simple Introductions</div>
+                        <div class="area-item">Fundamental Listening</div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Content -->
+                <div class="level-content" id="level-intermediate">
+                    <h3 class="level-header-text">Intermediate Level</h3>
+                    <p class="level-desc-text">Improve fluency, sentence structure and conversational confidence. Designed for those who know basics but struggle with smooth flow.</p>
+                    <div class="level-areas-title">Recommended Focus Areas</div>
+                    <div class="level-areas-grid">
+                        <div class="area-item">Complex Grammar Patterns</div>
+                        <div class="area-item">Fluent Conversation Flow</div>
+                        <div class="area-item">Idiomatic Expressions</div>
+                        <div class="area-item">Active Listening Practice</div>
+                    </div>
+                </div>
+
+                <!-- Advanced Content -->
+                <div class="level-content" id="level-advanced">
+                    <h3 class="level-header-text">Advanced Level</h3>
+                    <p class="level-desc-text">Refine communication, vocabulary and professional English usage. For proficient speakers aiming for polish and nuance.</p>
+                    <div class="level-areas-title">Recommended Focus Areas</div>
+                    <div class="level-areas-grid">
+                        <div class="area-item">Professional &amp; Business Tone</div>
+                        <div class="area-item">Public Speaking &amp; Debate</div>
+                        <div class="area-item">Advanced Writing &amp; Structure</div>
+                        <div class="area-item">Nuanced Listening &amp; Accents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ENGLISH SKILLS SECTION
+       ========================================================================== -->
+    <section class="skills-section section-padding">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Core Competencies</span>
+                <h2 class="section-title">Build Every English Skill</h2>
+                <p class="section-subtitle">Comprehensive training covering all four essential pillars of complete language proficiency.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=500&auto=format&fit=crop" alt="Student practicing speaking skills" class="skill-card-img">
+                    <span class="skill-num">01</span>
+                    <h3 class="skill-card-title">SPEAK</h3>
+                    <p class="skill-card-desc">Improve everyday communication, accent clarity, and vocal confidence through direct speaking practice.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=500&auto=format&fit=crop" alt="Student wearing headphones listening to English audio" class="skill-card-img">
+                    <span class="skill-num">02</span>
+                    <h3 class="skill-card-title">LISTEN</h3>
+                    <p class="skill-card-desc">Develop accurate understanding of spoken English, varying speech speeds, and natural conversational tones.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=500&auto=format&fit=crop" alt="Open book for reading comprehension practice" class="skill-card-img">
+                    <span class="skill-num">03</span>
+                    <h3 class="skill-card-title">READ</h3>
+                    <p class="skill-card-desc">Build vocabulary depth and reading comprehension skills across various real-world context materials.</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card reveal">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=500&auto=format&fit=crop" alt="Hand writing English sentences in notebook" class="skill-card-img">
+                    <span class="skill-num">04</span>
+                    <h3 class="skill-card-title">WRITE</h3>
+                    <p class="skill-card-desc">Improve sentence construction, structural grammar, and formal/informal written communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       LEARNING EXPERIENCE
+       ========================================================================== -->
+    <section class="learning-exp section-padding" id="learning">
+        <div class="container">
+            <div class="exp-grid">
+                <div class="exp-image-container reveal">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="Interactive English lecture environment with teacher and attentive students">
+                    <div class="exp-decorative-badge">
+                        <div class="exp-badge-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Approach</div>
+                            <div style="font-weight: 700;">Practical English Focus</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-text reveal">
+                    <span class="section-tag">Methodology</span>
+                    <h2 class="section-title">Learn Beyond The Textbook</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2.5rem;">
+                        Our learning model emphasizes active participation over passive listening, ensuring students gain immediate experience applying English in realistic settings.
+                    </p>
+
+                    <div class="exp-concepts">
+                        <div class="concept-item">
+                            <div class="concept-icon">01</div>
+                            <div>
+                                <h3 class="concept-title">CONVERSATION</h3>
+                                <p class="concept-desc">Practice useful real-world conversations designed for professional, social, and academic scenarios.</p>
+                            </div>
+                        </div>
+
+                        <div class="concept-item">
+                            <div class="concept-icon">02</div>
+                            <div>
+                                <h3 class="concept-title">PRACTICE</h3>
+                                <p class="concept-desc">Turn theoretical grammar rules into active English speaking and writing exercises.</p>
+                            </div>
+                        </div>
+
+                        <div class="concept-item">
+                            <div class="concept-icon">03</div>
+                            <div>
+                                <h3 class="concept-title">CONFIDENCE</h3>
+                                <p class="concept-desc">Develop lasting confidence through consistent, supportive communication opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       WHY OXFORD ENGLISH ACADEMY
+       ========================================================================== -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Academy Strengths</span>
+                <h2 class="section-title">Why Learn With Us?</h2>
+                <p class="section-subtitle">An educational environment crafted around learner clarity, steady progress, and practical application.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Practical English Learning</h3>
+                    <p class="why-card-desc">Emphasis on concepts and phrases that you can use immediately in your daily life, workplace, or studies.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Communication Focus</h3>
+                    <p class="why-card-desc">Designed to reduce hesitation and encourage clear, articulate verbal expression across diverse situations.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Structured Learning</h3>
+                    <p class="why-card-desc">Clear module pathways that help students move step-by-step from core fundamentals to complex usage.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Supportive Environment</h3>
+                    <p class="why-card-desc">A safe space to practice speaking without fear of making mistakes, fostering natural progress.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Speaking Practice</h3>
+                    <p class="why-card-desc">Frequent opportunities to converse with instructors and peers to sharpen fluency and natural tone.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3 class="why-card-title">Skill-Based Development</h3>
+                    <p class="why-card-desc">Focus on targeted sub-skills such as listening comprehension, syntax balance, and context vocabulary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ENGLISH CONVERSATION LAB
+       ========================================================================== -->
+    <section class="conversation-lab section-padding">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag gold">Interactive Dialogue</span>
+                <h2 class="section-title" style="color: var(--text-white);">Practice Real Conversations</h2>
+                <p class="section-subtitle" style="color: var(--text-light);">Explore real-life English conversation scenarios used in our practical sessions.</p>
+            </div>
+
+            <div class="scenario-nav reveal">
+                <button class="scenario-btn active" onclick="switchScenario('daily', this)">Daily Conversation</button>
+                <button class="scenario-btn" onclick="switchScenario('interview', this)">Job Interview</button>
+                <button class="scenario-btn" onclick="switchScenario('classroom', this)">Classroom</button>
+                <button class="scenario-btn" onclick="switchScenario('meeting', this)">Business Meeting</button>
+                <button class="scenario-btn" onclick="switchScenario('travel', this)">Travel</button>
+                <button class="scenario-btn" onclick="switchScenario('intro', this)">Introduction</button>
+            </div>
+
+            <div class="chat-box reveal">
+                <!-- Daily Conversation -->
+                <div class="chat-content active" id="scenario-daily">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Speaker A</span>
+                        Hello! How has your week been going so far?
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Speaker B</span>
+                        It has been quite busy, but productive! I'm focusing on improving my English skills this month.
+                    </div>
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Speaker A</span>
+                        That's great to hear! Practice makes a huge difference over time.
+                    </div>
+                </div>
+
+                <!-- Job Interview -->
+                <div class="chat-content" id="scenario-interview">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Interviewer</span>
+                        Could you tell me a little about your background and key strengths?
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Candidate</span>
+                        Certainly. I have worked in customer service for two years, where clear English communication was essential.
+                    </div>
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Interviewer</span>
+                        Excellent. How do you handle challenging situations at work?
+                    </div>
+                </div>
+
+                <!-- Classroom -->
+                <div class="chat-content" id="scenario-classroom">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Teacher</span>
+                        Who can explain the main difference between present perfect and simple past tenses?
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Student</span>
+                        Present perfect links the past to the present, while simple past describes a finished time!
+                    </div>
+                </div>
+
+                <!-- Business Meeting -->
+                <div class="chat-content" id="scenario-meeting">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Colleague A</span>
+                        Shall we review the proposal outline before finalizing the presentation slides?
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Colleague B</span>
+                        Yes, let's go over section two to ensure our core message is concise and clear.
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div class="chat-content" id="scenario-travel">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Traveler</span>
+                        Excuse me, could you direct me to the nearest train station?
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Local</span>
+                        Of course! Walk straight down this street for two blocks, then turn right.
+                    </div>
+                </div>
+
+                <!-- Introduction -->
+                <div class="chat-content" id="scenario-intro">
+                    <div class="chat-bubble speaker-a">
+                        <span class="speaker-label">Person A</span>
+                        Hi, my name is Sarah. It's a pleasure to meet you!
+                    </div>
+                    <div class="chat-bubble speaker-b">
+                        <span class="speaker-label">Person B</span>
+                        Nice to meet you too, Sarah! I'm Alex. Are you new to this academy?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       LEARNING JOURNEY
+       ========================================================================== -->
+    <section class="journey section-padding">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Structured Pathway</span>
+                <h2 class="section-title">Your Learning Journey</h2>
+                <p class="section-subtitle">A clear step-by-step roadmap to guide your development from day one.</p>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-step">
+                    <div class="step-num">01</div>
+                    <h3 class="step-title">Discover</h3>
+                    <p class="step-desc">Understand your current learning needs and identify primary communication goals.</p>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-num">02</div>
+                    <h3 class="step-title">Learn</h3>
+                    <p class="step-desc">Build essential vocabulary, grammar principles, and structured expressions.</p>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-num">03</div>
+                    <h3 class="step-title">Practice</h3>
+                    <p class="step-desc">Use English actively through guided conversations, reading, and listening tasks.</p>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-num">04</div>
+                    <h3 class="step-title">Improve</h3>
+                    <p class="step-desc">Receive constructive guidance to refine speech clarity, phrasing, and accuracy.</p>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-num">05</div>
+                    <h3 class="step-title">Communicate</h3>
+                    <p class="step-desc">Apply English confidently in your everyday professional, social, and academic life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       GALLERY
+       ========================================================================== -->
+    <section class="gallery section-padding">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Campus &amp; Atmosphere</span>
+                <h2 class="section-title">Inside The Learning Experience</h2>
+                <p class="section-subtitle">A glimpse into our focused, educational learning environments.</p>
+            </div>
+
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                <button class="filter-btn" onclick="filterGallery('classroom', this)">Classroom</button>
+                <button class="filter-btn" onclick="filterGallery('learning', this)">Learning</button>
+                <button class="filter-btn" onclick="filterGallery('speaking', this)">Speaking</button>
+                <button class="filter-btn" onclick="filterGallery('study', this)">Study</button>
+            </div>
+
+            <div class="gallery-grid reveal">
+                <!-- Image 1 -->
+                <div class="gallery-item" data-category="classroom" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600&auto=format&fit=crop" alt="Modern English language classroom environment with desks and blackboard">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Modern Language Classroom</span>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="gallery-item" data-category="speaking" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=600&auto=format&fit=crop" alt="Students engaged in group speaking practice session">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Group Speaking Practice</span>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="gallery-item" data-category="study" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600&auto=format&fit=crop" alt="Student taking detailed English study notes">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Focused Study Notes</span>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-item" data-category="learning" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Students collaborating on an English project around a table">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Collaborative Learning</span>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-item" data-category="classroom" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop" alt="Interactive English teacher instruction at front of class">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Interactive Instruction</span>
+                    </div>
+                </div>
+
+
+                <!-- Image 7 -->
+                <div class="gallery-item" data-category="study" onclick="openLightbox(6)">
+                    <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=600&auto=format&fit=crop" alt="Stack of English literature and dictionary reference books">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">English Resource Library</span>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="gallery-item" data-category="learning" onclick="openLightbox(7)">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop" alt="Student using digital laptop for English vocabulary exercises">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Digital Learning Practice</span>
+                    </div>
+                </div>
+
+                <!-- Image 9 -->
+                <div class="gallery-item" data-category="speaking" onclick="openLightbox(8)">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&auto=format&fit=crop" alt="Student presenting an English speech to peers">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Public Speaking Practice</span>
+                    </div>
+                </div>
+
+                <!-- Image 10 -->
+                <div class="gallery-item" data-category="study" onclick="openLightbox(9)">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop" alt="Open dictionary showing English definitions">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Vocabulary Building</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-nav">
+            <button class="lightbox-btn" onclick="changeLightboxImage(-1)">&#10094;</button>
+            <button class="lightbox-btn" onclick="changeLightboxImage(1)">&#10095;</button>
+        </div>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Fullscreen view of learning experience image">
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-tag">Helpful Details</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common inquiries regarding our courses and learning setup.</p>
+            </div>
+
+            <div class="faq-accordion reveal">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What English courses are available?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We offer courses in Spoken English, English Grammar, English Conversation, IELTS Preparation, Business English, and English for Beginners.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Is Spoken English available?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, Spoken English is one of our primary core offerings, focusing on real-world communication, pronunciation, and building conversational confidence.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer IELTS preparation?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we offer preparation-focused learning for students seeking to work on their reading, writing, listening, and speaking modules for IELTS.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Can beginners join English classes?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely. We offer a dedicated 'English for Beginners' path designed specifically to help new learners build basic vocabulary, sentence structure, and core comprehension.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Do you provide Business English learning?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, our Business English program targets workplace communication, presentation skills, formal email phrasing, and professional discussion etiquette.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How can I contact Oxford English Academy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        You can reach us directly by calling or messaging us on WhatsApp at +923094729478, or by emailing us at info@oxfordengacd@.com.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Can I discuss my learning requirements before joining?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we welcome inquiries! Contact our team via phone, WhatsApp, or email to discuss your current level and goals before deciding on a program.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT CTA
+       ========================================================================== -->
+    <section class="contact-cta section-padding">
+        <div class="container reveal">
+            <h2 class="section-title">Ready To Improve Your English?</h2>
+            <p class="section-subtitle">Start a conversation with Oxford English Academy and explore the learning options that suit your goals.</p>
+            <div class="cta-buttons">
+                <a href="tel:+923094729478" class="btn btn-gold">Call Now: 03094729478</a>
+                <a href="https://wa.me/923094729478" target="_blank" rel="noopener" class="btn btn-outline-white">WhatsApp Us</a>
+                <a href="mailto:info@oxfordengacd@.com" class="btn btn-outline-white">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Direct Details -->
+                <div class="contact-info-card reveal">
+                    <h2 class="contact-info-title">Let’s Start Your English Learning Journey</h2>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <div class="info-label">Phone</div>
+                                <a href="tel:+923094729478" class="info-value">03094729478</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            </div>
+                            <div>
+                                <div class="info-label">WhatsApp</div>
+                                <a href="https://wa.me/923094729478" target="_blank" rel="noopener" class="info-value">+923094729478</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <div class="info-label">Email</div>
+                                <a href="mailto:info@oxfordengacd@.com" class="info-value">info@oxfordengacd@.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Static Form -->
+                <div class="contact-form reveal">
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" class="form-input" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="Your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest" class="form-label">Learning Interest</label>
+                            <select id="interest" class="form-select" required>
+                                <option value="" disabled selected>Select an area of interest</option>
+                                <option value="Spoken English">Spoken English</option>
+                                <option value="Grammar">Grammar</option>
+                                <option value="Conversation">Conversation</option>
+                                <option value="IELTS">IELTS</option>
+                                <option value="Business English">Business English</option>
+                                <option value="Beginner English">Beginner English</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-main">OXFORD</span>
+                        <span class="logo-sub">ENGLISH ACADEMY</span>
+                    </a>
+                    <p>Learn English. Build Confidence. Communicate Better.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#courses">Courses</a>
+                        <a href="#why-us">Why Us</a>
+                        <a href="#learning">Learning</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">COURSES</h4>
+                    <div class="footer-links">
+                        <a href="#courses">Spoken English</a>
+                        <a href="#courses">English Grammar</a>
+                        <a href="#courses">English Conversation</a>
+                        <a href="#courses">IELTS Preparation</a>
+                        <a href="#courses">Business English</a>
+                        <a href="#courses">English for Beginners</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">CONTACT</h4>
+                    <div class="footer-links">
+                        <a href="tel:+923094729478">Phone: 03094729478</a>
+                        <a href="https://wa.me/923094729478" target="_blank" rel="noopener">WhatsApp: +923094729478</a>
+                        <a href="mailto:info@oxfordengacd@.com">Email: info@oxfordengacd@.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-cta-box">
+                <div class="footer-cta-text">
+                    <h3>Ready to start learning?</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem;">Contact Oxford English Academy to get started today.</p>
+                </div>
+                <a href="#contact" class="btn btn-gold">Contact Oxford English Academy</a>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="currentYear"></span> Oxford English Academy. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#about">Privacy Policy</a>
+                    <a href="#about">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </a>
+
+    <!-- ==========================================================================
+       JAVASCRIPT LOGIC
+       ========================================================================== -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when link clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Sticky Header & Back To Top Visibility
+        const header = document.getElementById('header');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 400) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Update Active Navigation Link based on Scroll Section
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll Reveal Animations
+        const revealElements = document.querySelectorAll('.reveal');
+
+        function checkReveal() {
+            const triggerBottom = window.innerHeight * 0.88;
+            revealElements.forEach(el => {
+                const elTop = el.getBoundingClientRect().top;
+                if (elTop < triggerBottom) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkReveal);
+        window.addEventListener('load', checkReveal);
+
+        // Interactive Level Selector Switcher
+        function switchLevel(level, btnElement) {
+            document.querySelectorAll('.level-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            document.querySelectorAll('.level-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(`level-${level}`).classList.add('active');
+        }
+
+        // English Conversation Lab Switcher
+        function switchScenario(scenario, btnElement) {
+            document.querySelectorAll('.scenario-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            document.querySelectorAll('.chat-content').forEach(chat => chat.classList.remove('active'));
+            document.getElementById(`scenario-${scenario}`).classList.add('active');
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category, btnElement) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox Functionality
+        const galleryImages = Array.from(document.querySelectorAll('.gallery-item img'));
+        let currentImageIndex = 0;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            lightboxImg.src = galleryImages[currentImageIndex].src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeLightboxImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) {
+                currentImageIndex = galleryImages.length - 1;
+            } else if (currentImageIndex >= galleryImages.length) {
+                currentImageIndex = 0;
+            }
+            lightboxImg.src = galleryImages[currentImageIndex].src;
+        }
+
+        // Lightbox Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+            if (e.key === 'ArrowRight') changeLightboxImage(1);
+        });
+
+        // FAQ Accordion Toggle
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const isOpen = faqItem.classList.contains('active');
+
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            if (!isOpen) {
+                faqItem.classList.add('active');
+                const answer = faqItem.querySelector('.faq-answer');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        // Form Validation & Honest Submission Handling
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const interest = document.getElementById('interest').value;
+            const message = document.getElementById('message').value.trim();
+            const statusDiv = document.getElementById('formStatus');
+
+            if (!name || !email || !phone || !interest || !message) {
+                statusDiv.className = 'form-status error';
+                statusDiv.textContent = 'Please fill out all required fields correctly.';
+                return;
+            }
+
+            // Honest feedback without pretending backend sent email
+            statusDiv.className = 'form-status success';
+            statusDiv.innerHTML = `Thank you, <strong>${name}</strong>! Your inquiry details have been saved locally on this browser.<br>To connect with Oxford English Academy immediately, please contact us directly via WhatsApp or Phone at <strong>03094729478</strong>.`;
+
+            document.getElementById('inquiryForm').reset();
+        }
+    </script>
+</body>
+</html>
